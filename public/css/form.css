@@ -1,0 +1,32 @@
+body {
+    background-color: #65bae9;
+}
+
+.form-container {
+    margin: 1em 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    font-size: 1em;
+}
+
+input:not(:last-child) {
+    width: 300px;
+    margin-bottom: 0.5em;
+}
+
+input[type='submit'] {
+    border: none;
+    color: #fff;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #06d70e;
+    padding: 0.1em 1.8em;
+    border-radius: 3px;
+    cursor: pointer;
+}

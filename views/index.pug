@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .search-form-wrapper
+        .search-form
+            input(type='text', name='search', placeholder='Enter search terms here...')
+            button(type='submit') Search
+    .places
+        for place in places
+            .place(data-id=place._id)
+                h3= place.name
+                img(src=place.img_url)
+                p #{place.attendees.length} Attending
+                if user
+                    button#attend Attend
+
+block scripts
+    script(src='/js/app.js')

@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title Nightlife Coordination App
+        link(rel='stylesheet', href='/css/style.css')
+        link(rel='stylesheet', href='/css/nav.css')
+        block stylesheets
+    body
+        if user
+            script.
+                user_id = '#{user._id}'
+
+        include partials/navbar
+        .main-container
+        block content
+
+        block scripts
+
+        script(src='/js/nav.js')

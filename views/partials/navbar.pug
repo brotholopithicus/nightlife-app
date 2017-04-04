@@ -1,0 +1,14 @@
+nav.nav-container
+    .main-nav
+        h1.logo
+            a(href='/') Nightlife App
+        h1.nav-toggle &#9776;
+    .nav-list(style='display: none;')
+        a(href='/') Home
+        if !user
+            a(href='/login') Login
+            a(href='/signup') Signup
+        else
+
+            a(href='/profile') Profile
+            a(href='/users/logout') Logout

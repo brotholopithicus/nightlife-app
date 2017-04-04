@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    h1 Profile
+    h4 Name: #{user.name}
+    h4 Username: #{user.username}
+    h4 Email: #{user.email}
+    h1 Attending
+    h4.place-name
+    h4.place-attendees
+    
+    
+block scripts
+  script(src='/js/profile.js')
